@@ -54,15 +54,16 @@ class Room {
   getItemByName(name) {
 
     // Fill this in
-
+    return this.items.find(item => item.name === name);
   }
 
   getEnemyByName(name) {
 
     // Fill this in
-
+    const enemies = this.getEnemies();
+    return enemies.find(enemy => enemy.name === name);
+ }
 }
-
 module.exports = {
   Room,
 };

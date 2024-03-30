@@ -74,12 +74,23 @@ describe ('Enemy', function () {
   let enemy;
   let room;
   let item;
+  // let sandwich;
 
   beforeEach(function() {
     room =  new Room("Test Room", "A test room");
     item = new Item("rock", "just a simple rock");
-    character = new Character('Character', 'an ordinary character', room);
-    character.items.push(item);
+    player = new Player("player", room);
+    enemy = new Enemy('enemy', 'an ordinary character', room);
+    // character = new Character('Character', 'an ordinary character', room);
+    // character.items.push(item);
+
+      //  // Add enemy to World and set player
+      //  World.enemies.push(enemy);
+      //  World.setPlayer(player);
+   
+      //  // Add item and sandwich to room
+      //  enemy.items.push(item);
+      //  room.items.push(sandwich);
   });
 
   it('should have name and description attributes', function () {
