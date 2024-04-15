@@ -8,9 +8,9 @@ class Character {
       throw new Error('Cannot instantiate abstract class Character.');
     }
 
-    if (this instanceof Player || this instanceof Enemy) {
-      throw new Error('Character instances cannot be instances of Player or Enemy.');
-    }
+    // if (this instanceof Player || this instanceof Enemy) {
+    //   throw new Error('Character instances cannot be instances of Player or Enemy.');
+    // }
     
     this.name = name;
     this.description = description;
